@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 03</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</head>
+<body>
+    
+    <br><br><br><br>
+
+    <script>
+
+        let num_1, num_2, s, r, m, d;
+
+        num_1 = parseFloat(prompt("INGRESE EL PRIMERO NÚMERO"));
+        num_2 = parseFloat(prompt("INGRESE EL SEGUNDO NÚMERO"));
+
+        s = num_1 + num_2;
+        r = num_1 - num_2;
+
+        m = num_1 * num_2;
+        d = num_1 / num_2;
+        
+        if (num_1 > num_2){
+
+            alert("La suma de ambos números es " + s);
+            alert("La resta de ambos números es " + r);
+
+        }else if (num_1 < num_2){
+
+            alert("La multiplicación de ambos múmeros es " + m);
+            alert("La división de ambos múmeros es " + d);
+
+        };
+
+    </script>
+
+    <br>
+
+    <center><a href="index.html"><button class="btn btn-outline-danger" type="button">Regresar</button></a></center>
+
+</body>
+</html>

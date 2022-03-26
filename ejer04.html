@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 04</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</head>
+<body>
+    
+    <br><br><br><br>
+
+    <script>
+
+        let nota1, nota2, nota3, prome;
+
+        nota1 = parseFloat(prompt("INGRESE LA PRIMERA NOTA"));
+        nota2 = parseFloat(prompt("INGRESE LA SEGUNDA NOTA"));
+        nota3 = parseFloat(prompt("INGRESE LA TERCERA NOTA"));
+
+        prome = (nota1 + nota2 + nota3)/3;
+        
+        if (prome > 4){
+
+            alert("REGULAR");
+
+        }else if (prome < 4){
+
+            alert("REPROBADO");
+
+        };
+
+    </script>
+
+    <br>
+
+    <center><a href="index.html"><button class="btn btn-outline-danger" type="button">Regresar</button></a></center>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 02</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</head>
+<body>
+    
+    <br><br><br><br>
+    
+    <div class="container">
+        
+        <div class="row">
+
+            <div class="col-md-4 btn btn-outline-secondary">
+
+                <h2>PRIMER NÚMERO:</h2>
+
+            </div>
+
+            <div class="col btn btn-outline-secondary">
+
+                <h3>
+                    <input type="number" name="1_num" id="1_num"
+                    title="Solo ingrese números." oninput="sum()">
+                </h3>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="row">
+
+            <div class="col-md-4 btn btn-outline-secondary">
+
+                <h2>SEGUNDO NÚMERO:</h2>
+
+            </div>
+
+            <div class="col btn btn-outline-secondary">
+
+                <h3>
+                    <input type="number" name="2_num" id="2_num"
+                    title="Solo ingrese números." oninput="sum()">
+                </h3>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="row">
+
+            <div class="col-md-4 btn btn-outline-secondary">
+
+                <h2>TERCER NÚMERO:</h2>
+
+            </div>
+
+            <div class="col btn btn-outline-secondary">
+
+                <h3>
+                    <input type="number" name="3_num" id="3_num"
+                    title="Solo ingrese números." oninput="mult()">
+                </h3>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="row">
+
+            <div class="col-md-4 btn btn-outline-secondary">
+
+                <h2>CUARTO NÚMERO:</h2>
+
+            </div>
+
+            <div class="col btn btn-outline-secondary">
+
+                <h3>
+                    <input type="number" name="4_num" id="4_num"
+                    title="Solo ingrese números." oninput="mult()">
+                </h3>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <div class="row">
+
+            <div class="col-md-4 btn btn-outline-secondary">
+
+                <h2>SUMA DEL 1er y 2do NÚMERO:</h2>
+
+            </div>
+
+            <div class="col btn btn-outline-secondary">
+
+                <h3>
+                    <input type="number" name="suma2" id="suma2">
+                </h3>
+
+            </div>
+
+            <script type="text/javascript">
+                function sum() {
+                    try {
+                        let a = parseFloat(document.getElementById("1_num").value) || 0,
+                            b = parseFloat(document.getElementById("2_num").value) || 0;
+                            document.getElementById("suma2").value = a + b;
+                    } catch (e) {}
+                }
+            </script>
+
+        </div>
+
+        <br>
+
+        <div class="row">
+
+            <div class="col-md-4 btn btn-outline-secondary">
+
+                <h2>MULTIPLICACIÓN DEL 3er y 4to NÚMERO:</h2>
+
+            </div>
+
+            <div class="col btn btn-outline-secondary">
+
+                <h3>
+                    <input type="number" name="mult2" id="mult2">
+                </h3>
+
+            </div>
+
+            <script type="text/javascript">
+                function mult() {
+                    try {
+                        let c = parseFloat(document.getElementById("3_num").value) || 0,
+                            d = parseFloat(document.getElementById("4_num").value) || 0;
+                            document.getElementById("mult2").value = c * d;
+                    } catch (e) {}
+                }
+            </script>
+
+        </div>
+        
+    </div>
+
+    <br>
+
+    <center><a href="index.html"><button class="btn btn-outline-danger" type="button">Regresar</button></a></center>
+
+</body>
+</html>
